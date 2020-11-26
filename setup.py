@@ -11,6 +11,7 @@ setup(name='mtcmd',
       scripts=[
           'scripts/git_binst.sh',
           'scripts/git_cd.sh',
+          'scripts/git_commit_sync.sh',
       ],
       install_requires=[
           'mtbase',
