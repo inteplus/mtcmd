@@ -10,7 +10,7 @@ setup(name='mtcmd',
       packages=find_namespace_packages(include=['mt.*']),
       scripts=[
           'scripts/git_binst.sh',
-          'scripts/git_cd.sh',
+          'scripts/git_emac.sh',
           'scripts/git_commit_sync.sh',
       ],
       install_requires=[
