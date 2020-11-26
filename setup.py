@@ -1,27 +1,23 @@
 #!/usr/bin/env python3
 
 from setuptools import setup, find_namespace_packages
-from mt.base.version import version
+from mt.cmd.version import version
 
 setup(name='mtbase',
       version=version,
-      description="The most fundamental Python modules for Minh-Tri Pham",
+      description="Minh-Tri Pham's common Linux scripts",
       author=["Minh-Tri Pham"],
       packages=find_namespace_packages(include=['mt.*']),
-      install_requires=[
-          'psutil',
-          'getmac',
-          'netifaces',
-          'colorama',  # for colored text
-          'Cython',  # for fast speed on tiny objects
-          'numpy', # common ndarray
-          'tornado>=6.0.4', # 2020/08/27: tornado 6 is needed and distributed must be >= v2.24.0
-          'dask>=2.24.0', # for simple multiprocessing jobs
-          'distributed>=2.24.0',  # for simple multiprocessing jobs
+      scripts=[
+          'scripts/git_binst.sh',
+          'scripts/git_cd.sh',
       ],
-      url='https://github.com/inteplus/mtbase',
+      install_requires=[
+          'mtbase',
+      ],
+      url='https://github.com/inteplus/mtcmd',
       project_urls={
-          'Documentation': 'https://mtdoc.readthedocs.io/en/latest/mt.base/mt.base.html',
-          'Source Code': 'https://github.com/inteplus/mtbase',
+          'Documentation': 'https://mtdoc.readthedocs.io/en/latest/mt.cmd/mt.cmd.html',
+          'Source Code': 'https://github.com/inteplus/mtcmd',
           }
       )
