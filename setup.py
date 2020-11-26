@@ -3,7 +3,7 @@
 from setuptools import setup, find_namespace_packages
 from mt.cmd.version import version
 
-setup(name='mtbase',
+setup(name='mtcmd',
       version=version,
       description="Minh-Tri Pham's common Linux scripts",
       author=["Minh-Tri Pham"],
