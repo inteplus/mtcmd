@@ -12,6 +12,7 @@ setup(name='mtcmd',
           'scripts/git_binst.sh',
           'scripts/git_emac.sh',
           'scripts/git_commit_sync.sh',
+          'scripts/mt_update.py',
       ],
       install_requires=[
           'mtbase',
