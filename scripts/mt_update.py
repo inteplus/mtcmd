@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
 
-import pkg_resources
+from importlib import metadata as im
 from subprocess import call
 
-packages = [dist.project_name for dist in pkg_resources.working_set]
+packages = [dist.name for dist in im.distributions()]
 packages = [x for x in packages if x.startswith('mt')]
-call("pip3 install  --upgrade " + ' '.join(packages), shell=True)
+call("pipi -U " + ' '.join(packages), shell=True)

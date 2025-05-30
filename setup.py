@@ -17,7 +17,7 @@ setup(
         "scripts/mt_update.py",
     ],
     install_requires=[
-        "mtbase",
+        "mtbase>=4.32.20",  # just updating
     ],
     url="https://github.com/inteplus/mtcmd",
     project_urls={
